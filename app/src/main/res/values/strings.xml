@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Menu</string>
+    <string name="gameNameTextViewText">Super Mega Snake</string>
+    <string name="singlePlayerGameButtonText">Single-player Game</string>
+    <string name="multiplayerGameButtonText">Multi-player Game</string>
+    <string name="leaderboardButtonText">Leaderboard</string>
+    <string name="closeButtonText">Close</string>
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/gameNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/press_start_2p_regular"
+        android:text="@string/gameNameTextViewText"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.42000002" />
+
+    <Button
+        android:id="@+id/singlePlayerGameButton"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/press_start_2p_regular"
+        android:onClick="onSinglePlayerButtonClick"
+        android:text="@string/singlePlayerGameButtonText"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/gameNameTextView"
+        app:layout_constraintStart_toStartOf="@+id/gameNameTextView"
+        app:layout_constraintTop_toBottomOf="@+id/gameNameTextView" />
+
+    <Button
+        android:id="@+id/multiplayerGameButton"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/press_start_2p_regular"
+        android:onClick="onMultiplayerPlayerButtonClick"
+        android:text="@string/multiplayerGameButtonText"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/singlePlayerGameButton"
+        app:layout_constraintStart_toStartOf="@+id/singlePlayerGameButton"
+        app:layout_constraintTop_toBottomOf="@+id/singlePlayerGameButton" />
+
+    <Button
+        android:id="@+id/leaderboardButton"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/press_start_2p_regular"
+        android:text="@string/leaderboardButtonText"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/multiplayerGameButton"
+        app:layout_constraintStart_toStartOf="@+id/multiplayerGameButton"
+        app:layout_constraintTop_toBottomOf="@+id/multiplayerGameButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
